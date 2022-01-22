@@ -9,7 +9,7 @@
 6.  git branch -M main
 7.  git push -u origin main
 
-## aws amplify hosting
+## aws amplify + route53
 
 8.  sign in to aws console
 9.  go to aws amplify and choose deploy
@@ -27,11 +27,10 @@
 
 19. verifying domain ownership
 20. go to route 53 hosted zones
-21.
 
 ref: https://www.youtube.com/watch?v=uaG2mMYLI68
 
-## firebase hosting
+## firebase + goDaddy
 
 19. use firebase cli to deploy the app to firebase
 20. add custom domains
@@ -42,12 +41,33 @@ ref: https://www.youtube.com/watch?v=uaG2mMYLI68
 24. add two TXT records name(@ && www) with google verification code
 25. add two A record name(@ && www) with value of ip address provided by firebase
 
+## aws amplify + goDaddy
+
+8.  sign in to aws console
+9.  go to aws amplify and choose deploy
+10. authorise aws amplify to access github account
+11. choose default settings and save and deploy
+12. go to domain managment and add domain (cleanersquare.co.uk)
+13. click on actions and view dns records
+14. verified ownership of the domain by adding CNAME record in goDaddy console
+15. pointed the www(traffic) to point to aws cloudfront(amplify) where the app is hosted by adding another CNAME record on goDaddy
+16. added forwarding on goDaddy console by redirecting all http requests to https
+
+ref: https://docs.aws.amazon.com/amplify/latest/userguide/to-add-a-custom-domain-managed-by-a-third-party-dns-provider.html
+ref: https://docs.aws.amazon.com/amplify/latest/userguide/to-add-a-custom-domain-managed-by-godaddy.html
+
 ## root
 
+cleanersquare.co.uk \*\*\*\* -> https://www.cleanersquare.co.uk/
+http://cleanersquare.co.uk/ \*\*\*\* -> https://www.cleanersquare.co.uk/
+
 https://cleanersquare.co.uk/
-http://cleanersquare.co.uk/
 
 ## www
 
-https://www.cleanersquare.co.uk/
-http://www.cleanersquare.co.uk/
+www.cleanersquare.co.uk \*\*\*\* -> https://www.cleanersquare.co.uk/
+http://www.cleanersquare.co.uk/ \*\*\*\* -> https://www.cleanersquare.co.uk/
+
+## destination
+
+https://www.cleanersquare.co.uk/ \*\*\*\*
