@@ -1,34 +1,24 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import logo from "../icons/logo1.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
+  <div
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      display: `flex`,
+      alignItems: `center`,
+      maxWidth: 960,
+      paddingTop: `1.5rem`,
+      paddingLeft: `1rem`,
+      // borderTop: `10px solid linear-gradient(90deg, #1E3F75 0%, #33B8BB 54.69%, #29A5A8 100%)`,
+      background: `linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+      linear-gradient(to right, darkblue, darkorchid) border-box`,
+      borderRadius: "50em",
+      border: "4px solid transparent",
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+    <img src={logo} alt="logo" style={{ width: "190px" }} />
+  </div>
 )
 
 Header.propTypes = {

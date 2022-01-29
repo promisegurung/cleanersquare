@@ -1,0 +1,31 @@
+hero {
+  display: flex;
+  flex-direction: column;
+  max-width: 960;
+  margin: 5rem auto;
+}
+title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+span {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+a {
+  color: #29a5a8;
+}
+p {
+  color: #254747;
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  width: max-content;
+  background-color: #29a5a8;
+  border: 0;
+  border-radius: 10rem;
+  color: white;
+}

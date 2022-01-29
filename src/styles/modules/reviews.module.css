@@ -1,0 +1,68 @@
+section {
+  margin: 6rem auto;
+}
+header {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #29a5a8;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+reviews {
+  display: flex;
+  justify-content: space-between;
+  /* overflow-x: hidden; */
+  width: max-content;
+  gap: 1rem;
+}
+top > img {
+  width: 3rem;
+  height: 3rem;
+}
+review {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: #ffffff;
+  /* drop shadow */
+
+  box-shadow: 0px 4px 15px 8px rgba(98, 0, 132, 0.05);
+  border-radius: 10px;
+  width: 85vw;
+  gap: 1.5rem;
+}
+top {
+  display: flex;
+}
+reviewer {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+name {
+  font-size: 1rem;
+  /* margin: 0; */
+  font-weight: bold;
+}
+occupation,
+date {
+  color: #7b8f8f;
+  font-size: 0.9rem;
+}
+bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+bottom > img {
+  width: 6rem;
+}

@@ -1,23 +1,17 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+import Hero from "../components/hero"
+import Reviews from "../components/reviews"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Cleaner square site.</p>
-    <p>This website is coming soon &#129321;</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={100}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
+    <Hero />
+    <Reviews />
+    <h1>expertise</h1>
+    <h1>contact us</h1>
   </Layout>
 )
 

@@ -16,6 +16,8 @@
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FAILED
 
+ref: https://github.com/aws-amplify/amplify-console/issues/977
+
 ## www.cleanersquare.co.uk
 
 1. makes a https request to -> https://www.cleanersquare.co.uk/
