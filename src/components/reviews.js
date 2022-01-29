@@ -20,7 +20,7 @@ const Reviews = () => (
 const Review = () => (
   <review>
     <top>
-      <img src={reviewer1} alt="a reviewer image" />
+      <img src={reviewer1} alt="a reviewer" />
       <reviewer>
         <name>Amy Smith</name>
         <occupation>Mother</occupation>
