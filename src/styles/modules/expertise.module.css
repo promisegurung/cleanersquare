@@ -1,8 +1,3 @@
-section {
-  margin: 6rem auto;
-  /* overflow: hidden; */
-}
-
 h2 {
   color: #29a5a8;
   font-size: 0.9rem;
@@ -15,34 +10,30 @@ h1 {
   margin: 0;
 }
 
-section > reviews {
+section > services {
   display: flex;
   justify-content: space-between;
   overflow-x: scroll;
-  /* width: max-content; */
   gap: 1rem;
-  /* margin-top: 2rem; */
-  /* background-color: honeydew; */
   padding: 2rem;
   margin: 0 -2rem;
 }
-
-reviews::-webkit-scrollbar {
+services::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-reviews {
+services {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-review > top > img {
-  width: 3rem;
-  height: 3rem;
+service > img {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1.5rem;
   object-fit: cover;
 }
-review {
+service {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -53,31 +44,11 @@ review {
   border-radius: 10px;
   min-width: 85vw;
   width: max-content;
-  gap: 1.5rem;
+  /* gap: 1rem; */
 }
-top {
-  display: flex;
-}
-reviewer {
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-name {
+
+service > h1 {
   font-size: 1rem;
-  /* margin: 0; */
   font-weight: bold;
-}
-occupation,
-date {
-  color: #7b8f8f;
-  font-size: 0.9rem;
-}
-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-bottom > img {
-  width: 6rem;
+  margin-bottom: 0.5rem;
 }

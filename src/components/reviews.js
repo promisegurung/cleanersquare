@@ -1,29 +1,47 @@
 import * as React from "react"
 import "../styles/modules/reviews.module.css"
 import reviewer1 from "../images/reviewer1.png"
+import reviewer2 from "../images/reviewer2.png"
+import reviewer3 from "../images/reviewer3.png"
 import stars from "../icons/5stars.svg"
-
+import Indicators from "./indicators"
 const Reviews = () => (
   <section>
-    <header>
+    <>
       <h2>Top Rated Solution</h2>
       <h1>Customer Reviews</h1>
-    </header>
+    </>
     <reviews>
-      <Review />
-      <Review />
-      <Review />
+      <Review
+        image={reviewer1}
+        name="Amy Smith"
+        occupation="Mother"
+        date="Jan 16 2022"
+      />
+      <Review
+        image={reviewer2}
+        name="Thomas Darian"
+        occupation="Contractor"
+        date="Jan 9 2022"
+      />
+      <Review
+        image={reviewer3}
+        name="Adriana Porter"
+        occupation="Business Owner"
+        date="Dec 10 2021"
+      />
     </reviews>
+    <Indicators />
   </section>
 )
 
-const Review = () => (
+const Review = ({ image, name, occupation, date }) => (
   <review>
     <top>
-      <img src={reviewer1} alt="a reviewer" />
+      <img src={image} alt="a reviewer" />
       <reviewer>
-        <name>Amy Smith</name>
-        <occupation>Mother</occupation>
+        <name>{name}</name>
+        <occupation>{occupation}</occupation>
       </reviewer>
     </top>
     <middle>
@@ -32,7 +50,7 @@ const Review = () => (
       veniam.
     </middle>
     <bottom>
-      <date>Jan 16 2022</date>
+      <date>{date}</date>
       <img src={stars} alt="5 stars" />
     </bottom>
   </review>

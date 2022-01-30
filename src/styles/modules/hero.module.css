@@ -1,20 +1,19 @@
-hero {
+hero-section {
   display: flex;
   flex-direction: column;
   max-width: 960;
   margin: 5rem auto;
 }
-title {
+hero-title {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-}
-span {
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.5rem;
 }
-a {
+em {
+  font-style: normal;
   color: #29a5a8;
 }
 p {
