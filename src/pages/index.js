@@ -6,13 +6,16 @@ import Seo from "../components/seo"
 import Hero from "../components/hero"
 import Reviews from "../components/reviews"
 import Expertise from "../components/expertise"
+import Form from "../components/form"
+import Contacts from "../components/contact"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Hero />
     <Reviews />
     <Expertise />
-    <h1>contact us</h1>
+    <Form />
+    <Contacts />
   </Layout>
 )
 
