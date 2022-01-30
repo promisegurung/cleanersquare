@@ -1,5 +1,5 @@
 import * as React from "react"
-import "../styles/modules/reviews.module.css"
+import "../styles/reviews.module.css"
 import reviewer1 from "../images/reviewer1.png"
 import reviewer2 from "../images/reviewer2.png"
 import reviewer3 from "../images/reviewer3.png"
@@ -7,10 +7,10 @@ import stars from "../icons/5stars.svg"
 import Indicators from "./indicators"
 const Reviews = () => (
   <section>
-    <>
-      <h2>Top Rated Solution</h2>
-      <h1>Customer Reviews</h1>
-    </>
+    <div>
+      <h4>Top Rated Solution</h4>
+      <h2>Customer Reviews</h2>
+    </div>
     <reviews>
       <Review
         image={reviewer1}
@@ -40,17 +40,17 @@ const Review = ({ image, name, occupation, date }) => (
     <top>
       <img src={image} alt="a reviewer" />
       <reviewer>
-        <name>{name}</name>
-        <occupation>{occupation}</occupation>
+        <h3>{name}</h3>
+        <p1>{occupation}</p1>
       </reviewer>
     </top>
-    <middle>
+    <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam.
-    </middle>
+    </p>
     <bottom>
-      <date>{date}</date>
+      <p1>{date}</p1>
       <img src={stars} alt="5 stars" />
     </bottom>
   </review>

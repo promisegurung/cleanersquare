@@ -1,30 +1,10 @@
-section {
-  margin: 6rem auto;
-  /* overflow: hidden; */
-}
-
-h2 {
-  color: #29a5a8;
-  font-size: 0.9rem;
-  font-weight: bold;
-  margin-bottom: 0.2rem;
-}
-
-h1 {
-  font-size: 1.3rem;
-  margin: 0;
-}
-
-section > reviews {
+reviews {
   display: flex;
   justify-content: space-between;
   overflow-x: scroll;
-  /* width: max-content; */
   gap: 1rem;
-  /* margin-top: 2rem; */
-  /* background-color: honeydew; */
   padding: 2rem;
-  margin: 0 -2rem;
+  margin: -1.5rem -2rem;
 }
 
 reviews::-webkit-scrollbar {
@@ -57,17 +37,14 @@ review {
 }
 top {
   display: flex;
+  align-items: center;
 }
 reviewer {
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
 }
-name {
-  font-size: 1rem;
-  /* margin: 0; */
-  font-weight: bold;
-}
+
 occupation,
 date {
   color: #7b8f8f;

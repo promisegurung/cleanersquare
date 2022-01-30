@@ -9,7 +9,6 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Accent from "./accent"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
@@ -27,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Accent />
+      <accent />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{

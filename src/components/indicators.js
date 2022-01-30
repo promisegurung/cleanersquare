@@ -1,5 +1,5 @@
 import * as React from "react"
-import "../styles/modules/indicators.module.css"
+import "../styles/indicators.module.css"
 
 const Expertise = () => (
   <indicators>
