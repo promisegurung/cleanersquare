@@ -1,13 +1,13 @@
 import * as React from "react"
-import "../styles/contact.module.css"
-import phone from "../icons/phone.svg"
-import mail from "../icons/mail.svg"
-import location from "../icons/location.svg"
+import "../../styles/contact.module.css"
+import phone from "../../icons/phone.svg"
+import mail from "../../icons/mail.svg"
+import location from "../../icons/location.svg"
 
-import logographics from "../icons/logographics.svg"
+import logographics from "../../icons/logographics.svg"
 
 const Contact = () => (
-  <section>
+  <div>
     <h2>Contact Information</h2>
     <contacts>
       <contact>
@@ -26,7 +26,7 @@ const Contact = () => (
     <graphics>
       <img src={logographics} alt="logographics" />
     </graphics>
-  </section>
+  </div>
 )
 
 export default Contact

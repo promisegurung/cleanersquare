@@ -25,12 +25,14 @@ const Expertise = () => (
 const Service = ({ image, title }) => (
   <service>
     <img src={image} alt="a reviewer" />
-    <h3>{title}</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam.
-    </p>
+    <div>
+      <h3>{title}</h3>
+      <p style={{ marginTop: "0.5rem", maxWidth: "50ch" }}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam.
+      </p>
+    </div>
   </service>
 )
 export default Expertise

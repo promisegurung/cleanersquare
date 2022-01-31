@@ -1,3 +1,17 @@
+container {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  position: relative;
+  margin-bottom: 7rem;
+}
+
+field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 contacts {
   display: flex;
   flex-direction: column;
@@ -21,12 +35,45 @@ contact > span {
 
 graphics {
   position: absolute;
-  /* background-color: aliceblue; */
   bottom: 0;
   right: 0;
   padding: 0;
 }
 graphics > img {
   height: 100px;
-  margin-bottom: -2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For smaller tablets, mobile landscape mode */
+  /* down from 85vw */
+}
+
+@media only screen and (min-width: 685px) {
+  /* For most tablets: */
+}
+
+@media only screen and (min-width: 768px) {
+  /* For narrow screens tablets: */
+}
+
+@media only screen and (min-width: 900px) {
+  /* For laptops and desktops beyond */
+  container {
+    flex-direction: row;
+    gap: 7rem;
+  }
+  container > div {
+    width: 50%;
+    /* background-color: rebeccapurple; */
+    align-self: flex-end;
+  }
+  contacts {
+    margin-bottom: 4.5rem;
+  }
+  graphics {
+    margin-bottom: 4rem;
+  }
+  graphics > img {
+    height: 200px;
+  }
 }

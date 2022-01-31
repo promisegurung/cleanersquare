@@ -1,8 +1,8 @@
 import * as React from "react"
-import "../styles/form.module.css"
+import "../../styles/contact.module.css"
 
 const Form = () => (
-  <section>
+  <div>
     <div>
       <h2>Pleased to meet you</h2>
       <p>
@@ -28,7 +28,7 @@ const Form = () => (
       </field>
       <button>Leave a message</button>
     </form>
-  </section>
+  </div>
 )
 
 export default Form

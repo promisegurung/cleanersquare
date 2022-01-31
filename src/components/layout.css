@@ -41,6 +41,10 @@ responsive {
 header {
   margin-bottom: -2rem;
 }
+header > img {
+  /* responsive */
+  width: 190px;
+}
 
 section {
   position: relative;
@@ -229,7 +233,7 @@ herographics {
 }
 herographics > img {
   /* responsive */
-  height: 200px;
+  height: 150px;
   margin-bottom: -5rem;
 }
 
@@ -243,6 +247,10 @@ herographics > img {
   /* For smaller tablets, mobile landscape mode */
   responsive {
     padding: 2rem 1.5rem;
+  }
+  header > img {
+    /* responsive */
+    width: 200px;
   }
 }
 
@@ -259,6 +267,10 @@ herographics > img {
     margin: 10rem auto;
     gap: 1.5rem;
   }
+  header > img {
+    /* responsive */
+    width: 250px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -272,6 +284,10 @@ herographics > img {
   }
   section {
     margin: 12rem auto;
+  }
+  header > img {
+    /* responsive */
+    width: 300px;
   }
 }
 
