@@ -27,13 +27,12 @@ review {
   flex-direction: column;
   padding: 1.5rem;
   background: #ffffff;
-  /* drop shadow */
-
   box-shadow: 0px 4px 15px 8px rgba(98, 0, 132, 0.05);
   border-radius: 10px;
-  min-width: 85vw;
-  width: max-content;
   gap: 1.5rem;
+
+  /* responsive */
+  min-width: 85vw;
 }
 top {
   display: flex;
@@ -57,4 +56,33 @@ bottom {
 }
 bottom > img {
   width: 6rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For smaller tablets, mobile landscape mode */
+  /* down from 85vw */
+  review {
+    min-width: 75vw;
+  }
+}
+
+@media only screen and (min-width: 685px) {
+  /* For most tablets: */
+  review {
+    min-width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For narrow screens tablets: */
+  review {
+    min-width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* For laptops and desktops beyond */
+  review {
+    min-width: 20vw;
+  }
 }

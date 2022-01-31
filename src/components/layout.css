@@ -3,7 +3,7 @@ html {
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em sans-serif, georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -20,21 +20,38 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   overflow-x: hidden;
 }
-footer,
+
 header,
-section {
-  display: block;
-  position: relative;
+main {
+  width: 100%;
+  max-width: 1280px;
 }
-section {
-  margin: 7rem auto;
+
+responsive {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* responsive */
+  padding: 1.5rem 1rem;
+}
+
+/* seperate */
+header {
+  margin-bottom: -2rem;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  /* responsive */
+  margin: 7rem auto;
   gap: 1rem;
 }
-header {
-  margin-bottom: -2.5rem;
-}
+
 p,
 p1,
 p2,
@@ -47,11 +64,11 @@ form {
   padding: 0;
   text-rendering: optimizeLegibility;
   color: inherit;
+  letter-spacing: 0.02rem;
 }
 
 p {
   color: #455454;
-  letter-spacing: 0.02rem;
 }
 p1,
 input::placeholder,
@@ -62,7 +79,6 @@ textarea::placeholder {
 p2 {
   color: #889c9c;
   font-weight: 700;
-  letter-spacing: 0.02rem;
 }
 h1,
 h2,
@@ -73,13 +89,12 @@ h4 {
 
 h1 {
   font-size: 2.1rem;
-  letter-spacing: 0.07rem;
+  letter-spacing: 0.05rem;
   line-height: 1.2;
 }
 
 h2 {
   font-size: 1.2rem;
-  /* line-height: 1.1; */
 }
 h3 {
   font-size: 1rem;
@@ -94,17 +109,12 @@ h4 {
 
 /* seperate */
 accent {
+  width: 100vw;
   display: block;
   height: 0.5rem;
   background: linear-gradient(90deg, #1e3f75 0%, #33b8bb 54.69%, #29a5a8 100%);
 }
-/* seperate */
-header {
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-  margin-top: 2rem;
-}
+
 /* seperate */
 form {
   display: flex;
@@ -207,8 +217,71 @@ button:-moz-focusring {
   box-sizing: inherit;
 }
 
+herographics {
+  position: absolute;
+  /* background-color: aliceblue; */
+  bottom: 0;
+  right: 0;
+  padding: 0;
+
+  /* responsive */
+  opacity: 0.1;
+}
+herographics > img {
+  /* responsive */
+  height: 200px;
+  margin-bottom: -5rem;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For smaller tablets, mobile landscape mode */
+  responsive {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 685px) {
+  /* For most tablets: */
+  herographics {
+    opacity: 0.15;
+  }
+  herographics > img {
+    /* responsive */
+    height: 300px;
+  }
+  section {
+    margin: 10rem auto;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For narrow screens tablets: */
+  responsive {
+    padding: 2.5rem 2rem;
+  }
+  herographics > img {
+    /* responsive */
+    height: 400px;
+  }
+  section {
+    margin: 12rem auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* For laptops and desktops beyond */
+  herographics {
+    opacity: 0.2;
+  }
+  herographics > img {
+    /* responsive */
+    height: 600px;
   }
 }
