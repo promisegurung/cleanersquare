@@ -58,6 +58,9 @@ typings/
 .cache/
 public
 
+# hosting info should not be public
+hostingAndDNS
+
 # Mac files
 .DS_Store
 
